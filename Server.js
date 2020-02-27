@@ -10,10 +10,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 // serve files from the public directory
 app.use(express.static('public'));
 
-// start the express web server listening on 8080
-app.listen(8888, () => {
-  console.log('listening on ' + 8888);
-});
+// start the express web server listening on 3000
+app.listen(process.env.PORT || 3000);
 
 // serve the homepage
 app.get('/', (req, res) => {
