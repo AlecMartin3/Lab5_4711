@@ -1,0 +1,150 @@
+  .TopBar {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  div.Title {
+    margin-left: 10px;
+  }
+  input.search{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    width: 50%;
+    height: 20px;
+  }
+  #list{
+    list-style-type: none;
+    padding: 0pt;
+    margin: auto;
+  }
+  
+  .Artists{
+    width: 350px;
+    margin: 0 auto;
+    flex-direction: row; 
+    border-top: none;
+  
+    padding: 10px;
+    padding-top: 0;
+  }
+  img{
+    border-radius: 10%;
+    float: left;
+  }
+  #person{
+    width: 94%;
+      padding: 5px;
+      margin: 0 auto;
+      padding: 8pt;
+      display: inline-block;
+      transition: all 1s ease;
+      
+      border: 1pt solid rgb(231, 231, 231);
+  }
+  .name{
+    font-weight: bold;
+    position: relative;
+    font-size: 1em;
+  }
+  .info{
+    font-size: 10pt;
+    padding-left: 5pt;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    top: 40%
+    
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+  p{
+      margin-bottom: -10px;
+      margin: 0;
+  }
+  img{
+    border-radius: 10%;
+    height: 75px;
+    width: 75px;
+  
+  }
+  #person:hover{
+    background-color: lightgray;
+    transition: 0.8s;
+  }
+  .Row{
+    width: 100%;
+  }
+  #customFields{
+    margin: 0 auto;
+  }
+  #AddArtistBut{
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #SearchBut{
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #Inputs{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    width: 350px;
+    height: 25px;
+    margin: 0 auto;
+    flex-direction: row; 
+    border-top: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #AddBut{
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 auto;
+    flex-direction: row; 
+    display: flex;
+    border-radius: 5px;
+  }
+.del{
+  float: right;
+  position: relative;
+  transform: translateY(40%);
+  margin-right:20px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 3px;
+  height: 40px;
+  width: 60pt;
+  border: none;
+  color: white;
+}
+.idP{
+  display: none;
+}

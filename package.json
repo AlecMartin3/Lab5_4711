@@ -1,0 +1,21 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "Lab 5 for 4711",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Lab5"
+  ],
+  "author": "Alec Martin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "10.15.3"
+  }
+}
