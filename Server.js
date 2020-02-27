@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.use(express.static('public'));
 
 // start the express web server listening on 8080
-app.listen(8888, () => {
-  console.log('listening on 8888');
+app.listen(process.env.PORT, () => {
+  console.log('listening on ' + process.env.PORT);
 });
 
 // serve the homepage
