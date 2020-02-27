@@ -59,11 +59,15 @@ app.post('/search', (req, res) => {
 app.post('/delete', (req, res) => {
   var artist = req.body;
   var element =  JSON.parse(JSON.stringify(artist));
+  console.log(element.ID)
   fs.readFile(jsonFile, function (err, data) {
     var json = JSON.parse(data)
-    json.splice(element, 1);
+    console.log(json)
+    // json.splice(element, 1);
     for(var ArtistObj in json){
-      console.log(ArtistObj+": "+json[ArtistObj].Name);
+      if (json[ArtistObj].ID == element.ID){
+        json.splice(ArtistObj, 1);
+      }
     }
     fs.writeFile(jsonFile, JSON.stringify(json, null, 4), function(err, result) {
       if(err) console.log('error', err);
