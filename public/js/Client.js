@@ -66,6 +66,7 @@ window.onload = function() {
                 }
                 else{
                     var Id = Date.now();
+                    console.log(Id);
                     createList(URL, Name, About, Id);
                     Store(URL, Name, About, Id)
                 }
@@ -96,6 +97,8 @@ function Delete(btn){
     var id = {
         ID: btn.parentNode.lastChild.textContent
     }
+    console.log( btn.parentNode.lastChild)
+    // console.log(id.ID);
     json = JSON.stringify(id)
     fetch('/delete', {method: 'POST',headers: {
         'Content-Type': 'application/json; charset=utf-8'
@@ -148,7 +151,7 @@ function clearList(){
         child = x.lastElementChild; 
     } 
 }
-function createList(URL, Name, About, ID){
+function createList(URL, Name, About, Id){
     var ul = document.getElementById("list");
     var li = document.createElement("li");
     ul.insertBefore(li, ul.lastChild);
@@ -179,5 +182,5 @@ function createList(URL, Name, About, ID){
     var ID =  document.createElement("p");
     ID.setAttribute("class", "idP");
     person.appendChild(ID);
-    ID.appendChild(document.createTextNode(ID));
+    ID.appendChild(document.createTextNode(Id));
 }

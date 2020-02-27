@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.use(express.static('public'));
 
 // start the express web server listening
-app.listen(process.env.PORT);
+app.listen(process.env.PORT||3000);
 
 // serve the homepage
 app.get('/', (req, res) => {
